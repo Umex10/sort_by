@@ -16,4 +16,8 @@ public class ContactWithAddress extends Contact {
         return String.format("%s, %s: %s", this.lastName, this.firstName, this.address.toString());
     }
 
+    public Address getAddress() {
+        return this.address;
+    }
+
 }

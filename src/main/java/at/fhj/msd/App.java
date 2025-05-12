@@ -42,5 +42,30 @@ public class App {
             System.out.println(contact);
         }
 
+         System.out.println("\n---------------------------ADDRESS TEST---------------------------\n");
+
+        
+        List<Contact> contacts2 = new ArrayList<>();
+        contacts2.add(new Contact("Leon", "Keller"));
+        contacts2.add(new Contact("Nina", "Hoffmann"));
+        contacts2.add(new ContactWithAddress("Marlon", "Voigt", new Address("Wiesenweg 3", "Stuttgart", 70173)));
+        contacts2.add(new Contact("Clara", "Zimmermann"));
+        contacts2.add(new Contact("Tim", "Brandt"));
+        contacts2.add(new ContactWithAddress("Jan", "Seidel", new Address("Am Markt 1", "Köln", 50667)));
+        contacts2.add(new Contact("Mira", "Wolf"));
+        contacts2.add(new Contact("Fabian", "Neumann"));
+        contacts2.add(new ContactWithAddress("Isabell", "Hartmann", new Address("Bahnhofstraße 9", "Dresden", 1067)));
+
+        contacts2.sort(new UniversalContactComparator());
+
+        System.out.println(contacts2);
+        
     }
-}
+
+
+
+    }
+
+     
+
+

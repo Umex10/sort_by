@@ -17,4 +17,16 @@ public class Address {
         return String.format("%s, %s; %d", this.street, this.place, this.zip);
     }
 
+    public String getStreet() {
+        return this.street;
+    }
+
+    public String getPlace() {
+        return this.place;
+    }
+
+    public int getZip() {
+        return this.zip;
+    }
+
 }
